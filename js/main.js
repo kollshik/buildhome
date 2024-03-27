@@ -33,6 +33,10 @@ $(function () {
   })
 
 
+
+
+
+
   /* Жалюзи */
 /*   $('.servises__blinds-item').on('click',function(){
     if ($('.servises__blinds-item').hasClass('blinds__item-active')){
@@ -40,9 +44,9 @@ $(function () {
     } else {
       $(this).addClass('blinds__item-active')
     }
-  }) */
+  })
  
-
+ */
 
 /* 
 $(document).ready(function() {
