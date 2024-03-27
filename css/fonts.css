@@ -1,0 +1,86 @@
+@font-face {
+  font-family: Alegreya;
+  font-weight: 700;
+  font-style: normal;
+  src: local("Alegreya"),
+       url("../fonts/Alegreya-Bold.woff2") format('woff2'),
+       url("../fonts/Alegreya-Bold.woff") format('woff'),
+       url("../fonts/Alegreya-Bold.eot") format('eot');
+  font-display: swap;
+}
+@font-face {
+  font-family: Alegreya;
+  font-weight: 500;
+  font-style: normal;
+  src: local("Alegreya"),
+       url("../fonts/Alegreya-Medium.woff2") format('woff2'),
+       url("../fonts/Alegreya-Medium.woff") format('woff'),
+       url("../fonts/Alegreya-Medium.eot") format('eot');
+  font-display: swap;
+}
+@font-face {
+  font-family: Alegreya;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Alegreya"),
+       url("../fonts/Alegreya-Regular.woff2") format('woff2'),
+       url("../fonts/Alegreya-Regular.woff") format('woff'),
+       url("../fonts/Alegreya-Regular.eot") format('eot');
+  font-display: swap;
+}
+
+/* ====Bellota==== */
+@font-face {
+  font-family: Bellota;
+  font-weight: 700;
+  font-style: normal;
+  src: local("Bellota"),
+      url("../fonts/Bellota-Bold.woff2") format('woff2'),
+      url("../fonts/Bellota-Bold.woff") format('woff'),
+      url("../fonts/Bellota-Bold.eot") format('eot');
+  font-display: swap;
+}
+@font-face {
+  font-family: Bellota;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Bellota"),
+       url("../fonts/Bellota-Regular.woff2") format('woff2'),
+       url("../fonts/Bellota-Regular.woff") format('woff'),
+       url("../fonts/Bellota-Regular.eot") format('eot');
+  font-display: swap;
+}
+
+/* ====Buenard==== */
+@font-face {
+  font-family: Buenard;
+  font-weight: 700;
+  font-style: normal;
+  src: local("Buenard"),
+      url("../fonts/Buenard-Bold.woff2") format('woff2'),
+      url("../fonts/Buenard-Bold.woff") format('woff'),
+      url("../fonts/Buenard-Bold.eot") format('eot');
+  font-display: swap;
+}
+@font-face {
+  font-family: Buenard;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Buenard"),
+       url("../fonts/Buenard-Regular.woff2") format('woff2'),
+       url("../fonts/Buenard-Regular.woff") format('woff'),
+       url("../fonts/Buenard-Regular.eot") format('eot');
+  font-display: swap;
+}
+
+/* ====Inte==== */
+@font-face {
+  font-family: Inter;
+  font-weight: 400;
+  font-style: normal;
+  src: local("Inte"),
+       url("../fonts/Inte-Regular.woff2") format('woff2'),
+       url("../fonts/Inte-Regular.woff") format('woff'),
+       url("../fonts/Inte-Regular.eot") format('eot');
+  font-display: swap;
+}
