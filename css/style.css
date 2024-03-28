@@ -81,10 +81,12 @@ html, body {
   z-index: -1;
 } 
 .main__servises {
-  height: 1320px;
   padding-bottom: 80px;
 }
-
+.main__project {
+  padding-top: 97px;
+  padding-bottom: 80px;
+}
 
 /* =================HEADER================== */
 /* =================HEADER================== */
@@ -486,7 +488,6 @@ opacity: 0;
   z-index: -1;
 }
 .servises__inner {
-  height: 100% ;
   display: flex;
   flex-direction: column;
   gap: 70px;
@@ -499,7 +500,6 @@ opacity: 0;
 .servises__dec-line {
 }
 .servises__blinds-box {
-  height: 100% ;
   display: flex;
   gap: 20px;
   position: relative;
@@ -557,8 +557,8 @@ opacity: 0;
   font-size: 36px;
   font-weight: 400;
   line-height: 143.173%; 
-/*   text-wrap: nowrap;
- */
+  text-wrap: wrap;
+
   transition: all .5s
 }
 .card-icon{
@@ -630,7 +630,6 @@ opacity: 0;
   text-align: start;
   font-size: 50px;
   line-height: 114%;
-  text-wrap: wrap; 
 }
 .servises__blinds-item:hover .card-icon{
   position: absolute;
@@ -656,9 +655,6 @@ opacity: 0;
 
 
 
-
-
-
 /* @keyframes slidein {
   from {
     width: 0;
@@ -668,6 +664,75 @@ opacity: 0;
   }
 } */
 
+/* =================PROJECT================== */
+/* =================PROJECT================== */
+
+
+
+.project {
+  position: relative;
+}
+.project::before{
+  position: absolute;
+  content: '';
+  width: 95%;
+  height: 100%;
+  top: 0; 
+  left: 0;
+  background: linear-gradient(190deg, rgba(28, 68, 21, 0.26) 13.44%, rgba(159, 204, 151, 0.26) 101.11%);  z-index: -1;
+} 
+.project__inner {
+  position: relative;
+}
+.project__subtitle {
+  position: absolute;
+  top: -100px;
+  right: 0;
+  
+  color: rgba(255, 255, 255, 0.17);
+  font-family: Buenard;
+  font-size: 197px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 143.173%; /* 282.051px */
+}
+.project_subtitle span{
+color: rgba(96, 118, 141, 0.09);
+}
+
+.project__head {
+  margin-bottom: 60px;
+}
+
+
+.project__dec-line {
+  width: 240px;
+}
+.project__slider-wrapper {
+}
+.project__slider {
+  margin-bottom: 30px;
+  max-width: 1150px;
+}
+.project__slid-item {
+  overflow: hidden;
+}
+
+
+.project__slider-nav {
+  margin: 0 -10px;
+  max-width: 1290px;
+}
+.nav__slid-item {
+  height: 258px;
+  margin: 0 10px;
+  overflow: hidden;
+}
+.nav__slid-item img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 
 

@@ -33,6 +33,35 @@ $(function () {
   })
 
 
+  /* Слайдер проэкты */
+  $('.project__slider').slick({
+    arrows: false,
+    dots: false,
+    slidesToShow: 1,
+    infinite: true,
+    asNavFor: '.project__slider-nav'
+  });
+
+  $('.project__slider-nav').slick({
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    asNavFor: '.project__slider',
+    dots: false,
+    arrows: false,
+    focusOnSelect: true
+  })
+
+  
+/*   $('.header__arrow').on('click',function(e){
+    e.preventDefault()
+  })
+
+  $('.arrow__left').on('click', function(){
+    $('.header__slider').slick('slickPrev')
+  });
+  $('.arrow__right').on('click', function(){
+    $('.header__slider').slick('slickNext')
+  }); */
 
 
 
