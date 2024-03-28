@@ -282,7 +282,7 @@ html, body {
 .header__media-icon {
   width: 70px;
   height: 70px;
-  background: url(images/media/play.svg) 0 0 / 100% no-repeat; 
+  background: url(/images/media/play.svg) 0 0 / 100% no-repeat; 
   transition: var(--trans);
 
 }
@@ -295,7 +295,7 @@ html, body {
   text-decoration-line: underline;
 }
 .header__media:hover .header__media-icon{
-  background: url(images/media/play-hover.svg) 0 0 / 100% no-repeat; 
+  background: url(/images/media/play-hover.svg) 0 0 / 100% no-repeat; 
 }
 .header__media:active .header__media-icon{
   transform: rotate(180deg);
