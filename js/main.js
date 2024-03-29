@@ -14,10 +14,10 @@ $(function () {
     e.preventDefault()
   })
 
-  $('.arrow__left').on('click', function(){
+  $('.header__arrow-left').on('click', function(){
     $('.header__slider').slick('slickPrev')
   });
-  $('.arrow__right').on('click', function(){
+  $('.header__arrow-right').on('click', function(){
     $('.header__slider').slick('slickNext')
   });
 
@@ -50,6 +50,16 @@ $(function () {
     arrows: false,
     focusOnSelect: true
   })
+  $('.project__arrow').on('click',function(e){
+    e.preventDefault()
+  })
+
+  $('.project__arrow-left').on('click', function(){
+    $('.project__slider').slick('slickPrev')
+  });
+  $('.project__arrow-right').on('click', function(){
+    $('.project__slider').slick('slickNext')
+  });
 
   
 /*   $('.header__arrow').on('click',function(e){
