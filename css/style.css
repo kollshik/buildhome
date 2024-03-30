@@ -55,7 +55,7 @@ html, body {
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
-  line-height: 143.173%; /* 91.631px */
+  line-height: 143%; 
 }
 .dec-line {
   width: 406px;
