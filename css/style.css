@@ -129,7 +129,10 @@ html, body {
   padding-top: 97px;
   padding-bottom: 80px;
 }
-
+.main__consult {
+  margin-top: 80px;
+  padding-bottom: 250px;
+}
 
 /* =================HEADER================== */
 /* =================HEADER================== */
@@ -735,10 +738,117 @@ z-index: 1;
   top: calc(50% - 120px);
   left: calc(1150px + 55px);
 }
+/* =================CONSULTAT================== */
+/* =================CONSULTAT================== */
+
+.cnsultat {
+position: relative;
+z-index: 1;
+}
+.cnsultat::before{
+  position: absolute;
+  content:'';
+  top: 0;
+  right: 0;
+  width: 95%;
+  height: 100%;
+  background: linear-gradient(56deg, rgba(124, 188, 255, 0.24) 7.88%, rgba(13, 69, 126, 0.24) 89.39%);
+  z-index: -1;
+}
+
+.consult__inner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 84px;
+}
+.consult__subtitle {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  color: rgba(255, 255, 255, 0.17);
+  font-family: Buenard;
+  font-size: 117px;
+  font-weight: 700;
+  line-height: 143%; 
+}
+.consult__subtitle span{
+  color: rgba(255, 255, 255, 0.40);
+}
+.consult__head {
+}
+.consult__title {
+}
+.consult__dec-line {
+}
+
+.consult__form {
+display: flex;
+justify-content: flex-start;
+gap: 80px;
+
+}
+.consult__form-item{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form__left{
+  max-width: 500px;
+}
+
+.form__right{
+  max-width: 800px;
+}
+.consult__form label{
+  color: #000;
+  font-family: Alegreya;
+  font-size: 30px;
+  line-height: 143%;
+}
+.consult__form input, textarea{
+  position: relative;
+  width: 100%;
+  margin-bottom: 45px;
+  background: #60768D;
+
+  padding: 26px 0 26px 20px;
+
+  color: #FFF;
+  font-family: Inter;
+  font-size: 20px;
+}
+
+.consult__form input::placeholder, textarea::placeholder{
+  color: rgba(255, 255, 255, 0.60);
+  font-family: Inter;
+  font-size: 20px;
+}
+.consult__form button{
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+
+  color: #414A4F;
+  font-family: Alegreya;
+  line-height: 143%; 
+  font-size: 30px;
+  padding: 12px 0;
+
+  border: 1px solid #000; 
+  background-color: initial;
+}
+
+.consult__form [type="email"]{
+  max-width: 500px;
+}
+.consult__form textarea{
+  margin-bottom: 0;
+  height: 100%;
+}
 
 
-
- 
 /* =================MEDIA================== */
 /* =================MEDIA================== */
 @media (max-width:1500px){
