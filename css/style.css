@@ -323,7 +323,7 @@ html, body {
 .header__media-icon {
   width: 70px;
   height: 70px;
-  background: url(images/media/play.svg) 0 0 / 100% no-repeat; 
+  background: url(/images/media/play.svg) 0 0 / 100% no-repeat; 
   transition: var(--trans);
 }
 .header__media-text {
@@ -335,7 +335,7 @@ html, body {
   text-decoration-line: underline;
 }
 .header__media:hover .header__media-icon{
-  background: url(images/media/play-hover.svg) 0 0 / 100% no-repeat; 
+  background: url(/images/media/play-hover.svg) 0 0 / 100% no-repeat; 
 }
 .header__media:active .header__media-icon{
   transform: rotate(180deg);
@@ -782,12 +782,10 @@ z-index: 1;
 }
 .consult__dec-line {
 }
-
 .consult__form {
 display: flex;
 justify-content: flex-start;
 gap: 80px;
-
 }
 .consult__form-item{
   display: flex;
@@ -823,7 +821,6 @@ gap: 80px;
 
   transition: all .8s;
 }
-
 .consult__form input::placeholder, textarea::placeholder{
   color: rgba(255, 255, 255, 0.60);
   font-family: Inter;
@@ -836,7 +833,6 @@ gap: 80px;
 .consult__form input:focus, textarea:focus{
   background: #34414e
 }
-
 .consult__form button{
   position: relative;
   width: 100%;
@@ -850,8 +846,6 @@ gap: 80px;
  
   background-color: transparent;
   z-index: 1;
-
-  
 }
 .consult__form button::after{
   position: absolute;
@@ -883,8 +877,6 @@ gap: 80px;
 .consult__form button:hover:active{
   text-shadow: 0px 0px 6.8px rgba(0, 0, 0, 0.55);
 }
-
-
 .consult__form [type="email"]{
   max-width: 500px;
 }
@@ -892,7 +884,6 @@ gap: 80px;
   margin-bottom: 0;
   height: 100%;
 }
-
 
 /* =================MEDIA================== */
 /* =================MEDIA================== */
