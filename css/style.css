@@ -818,6 +818,10 @@ gap: 80px;
   color: #FFF;
   font-family: Inter;
   font-size: 20px;
+
+  box-shadow: 13px 13px 0px 0px rgba(255, 255, 255, 0.67);
+
+  transition: all .8s;
 }
 
 .consult__form input::placeholder, textarea::placeholder{
@@ -825,6 +829,14 @@ gap: 80px;
   font-family: Inter;
   font-size: 20px;
 }
+.consult__form input:hover, textarea:hover{
+  box-shadow: 0px 0px 0px 0px rgba(255, 255, 255, 0.67);
+}
+
+.consult__form input:focus, textarea:focus{
+  background: #34414e
+}
+
 .consult__form button{
   position: relative;
   width: 100%;
@@ -835,10 +847,43 @@ gap: 80px;
   line-height: 143%; 
   font-size: 30px;
   padding: 12px 0;
+ 
+  background-color: transparent;
+  z-index: 1;
 
-  border: 1px solid #000; 
-  background-color: initial;
+  
 }
+.consult__form button::after{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 1px solid #000000a5; 
+}
+.consult__form button::before{
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  top: 13px;
+  left: 13px;
+  background-color: #FFF;
+  opacity: .6;
+  z-index: -1;
+
+  transition: var(--trans);
+}
+.consult__form button:hover::before{
+  top: 0;
+  left: 0;
+  opacity: 1;
+}
+.consult__form button:hover:active{
+  text-shadow: 0px 0px 6.8px rgba(0, 0, 0, 0.55);
+}
+
 
 .consult__form [type="email"]{
   max-width: 500px;
