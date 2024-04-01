@@ -61,17 +61,26 @@ $(function () {
     $('.project__slider').slick('slickNext')
   });
 
+  /*Слайдер feetback */
+  $('.feetback__slid-box').slick({
+    arrows: false,
+    dots: true,
+    slidesToShow: 1,
+    autoplay: false,
+    infinite: true,
+  })
+
   
-/*   $('.header__arrow').on('click',function(e){
+  $('.feetback__arrow').on('click',function(e){
     e.preventDefault()
   })
 
-  $('.arrow__left').on('click', function(){
-    $('.header__slider').slick('slickPrev')
+  $('.feetback__arrow-left').on('click', function(){
+    $('.feetback__slid-box').slick('slickPrev')
   });
-  $('.arrow__right').on('click', function(){
-    $('.header__slider').slick('slickNext')
-  }); */
+  $('.feetback__arrow-right').on('click', function(){
+    $('.feetback__slid-box').slick('slickNext')
+  });
 
 
 

@@ -63,6 +63,30 @@ html, body {
   background: #414A4F;
   margin-left: 30px;
 }
+.slick-dots{
+  position: absolute;
+
+  display: flex;
+  justify-content: center;
+
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 8px
+}
+
+.slick-dots button{
+  font-size: 0;
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-color: #D9D9D9;
+  border-radius: 50%;
+}
+.slick-active button{
+  background-color: #4C90B6;
+}
 .arrow-box{
   position: absolute;
   display: flex;
@@ -133,7 +157,10 @@ html, body {
   margin-top: 80px;
   padding-bottom: 250px;
 }
-
+.main__feetback {
+  margin-top: 80px;
+  padding-bottom: 250px;
+}
 /* =================HEADER================== */
 /* =================HEADER================== */
 .header__inner {
@@ -395,31 +422,7 @@ html, body {
   height: 100%;
   object-fit: cover;
 }
-.header__slider .slick-dots{
-  position: absolute;
 
-  display: flex;
-  justify-content: center;
-
-  bottom: 20px;
-  left: 0;
-  right: 0;
-}
-.header__slider ul{
-  display: flex;
-  gap: 8px
-}
-.header__slider .slick-dots button{
-  font-size: 0;
-  display: block;
-  width: 10px;
-  height: 10px;
-  background-color: #D9D9D9;
-  border-radius: 50%;
-}
-.header__slider .slick-active button{
-  background-color: #4C90B6;
-}
 .header_arrow-box{
   left: 30px;
   bottom: 30px;
@@ -884,6 +887,170 @@ gap: 80px;
   margin-bottom: 0;
   height: 100%;
 }
+/* =================FEETBACK================== */
+/* =================FEETBACK================== */
+
+
+.feetback {
+  background: rgba(5, 46, 69, 0.49);
+}
+.feetback__inner {
+  position: relative;
+}
+.feetback__subtitle {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  color: rgba(255, 255, 255, 0.17);
+  font-family: Buenard;
+  font-size: 117px;
+  font-weight: 700;
+  line-height: 143%; 
+}
+.feetback__subtitle span{
+  color: rgba(255, 255, 255, 0.40);
+}
+.feetback__head {
+  margin-top: 40px;
+  margin-bottom: 100px;
+}
+.feetback__title {
+}
+.feetback____dec-line {
+}
+.feetback__slider-wrapper {
+}
+.feetback__slid-box {
+  position: relative;
+}
+.feetback__slid {
+  margin: 20px;
+}
+
+
+.feetback__slid-cart{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 100px;
+  max-width: 1435px;
+  min-height: 400px;
+  padding: 40px;
+  background: #60768D;
+  position: relative;
+
+
+}
+.feetback__slid-cart::before{
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: 20px;
+  left: 20px;
+  border: 1px solid #000000bd;
+}
+
+.feetback__slid-client {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+
+}
+.feetback__slid-avater {
+  width: 155px;
+  height: 152px;
+  overflow: hidden;
+  border-radius: 100px;
+  border: 6px solid #EEE;
+}
+.feetback__slid-avater img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.feetback__slid-name {
+  color: #EEE;
+  font-family: Alegreya;
+  font-size: 25px;
+   font-weight: 700;
+  line-height: 143%;
+  text-align: center;
+  opacity: .7;
+}
+.feetback__slid-comment {
+  color: #FFF;
+  font-family: Alegreya;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 100%; 
+  position: relative;
+}
+.feetback__slid-comment::before{
+  position: absolute;
+  content: '';
+  width: 60px;
+  height: 60px;
+  top: -8px;
+  left: -80px;
+  background: url(/images/Quote.svg);
+}
+
+.feetback__slid-title {
+  margin-bottom: 35px;
+
+  }
+.feetback__slid-text {
+  max-width: 1000px;
+  font-size: 20px;
+  font-weight: 500;
+}
+.feetback__slid-box .slick-dots{
+  bottom: -90px;
+}
+
+.feetback_arrow-box{
+flex-direction: row;
+gap: 260px;
+left: calc(50% - calc(370px / 2));
+bottom: calc(-90px - 15px) ;
+}
+/* =================FOOTER================== */
+/* =================FOOTER================== */
+.footer {
+}
+.container {
+}
+.footer__inner {
+}
+.footer__body {
+}
+.footer__form {
+}
+.footer__nav {
+}
+.footer__nav-item {
+}
+.footer__nav-link {
+}
+.footer__contact {
+}
+.footer__social-list {
+}
+.footer__social-item {
+}
+.footer__social-link {
+}
+.footer__row {
+}
+
+
+
+
+
 
 /* =================MEDIA================== */
 /* =================MEDIA================== */
