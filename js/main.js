@@ -81,19 +81,39 @@ $(function () {
 
 
 
-
+/* А это ведь костыль..... Нужно фиксироваьт во вью порте*/
 
   let $header = $('.header');
   let offset = $header.offset().top;
   let headerHeight = $header.outerHeight(); 
 
+
+
   $(window).on('scroll', function(){
     if ($(this).scrollTop() >= offset){
-      $('.servises__title').addClass('left__right-anima');
+      $('.title').addClass('left__right-anima');
+      $('.dec-line').addClass('left__right-anima');
+      $('.servises__subtitle').addClass('right__lef-anima');
+
     } else {
-      $('.servises__title').removedClass('left__right-anima');
+      $('.title').removedClass('left__right-anima');
+      $('.dec-line').removedClass('left__right-anima');
+      $('.servises__subtitle').removedClass('right__lef-anima');
     }
   })
 
-    
+
+  let $servhead =  $('.servises__head')
+  let offsetSer = $servhead.offset().left;
+  let SerHeight = $servhead.outerHeight(); 
+
+  $(window).on('scroll', function(){
+    if ($(this).scrollTop() >= offsetSer){
+      $('.servises__blinds-box').addClass('left__right-anima');
+    } else {
+      $('.servises__blinds-box').removedClass('left__right-anima');
+    }
+  })
+
+
   })

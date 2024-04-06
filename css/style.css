@@ -54,13 +54,17 @@ html, body {
   font-size: 64px;
   font-style: normal;
   font-weight: 700;
-  line-height: 143%; 
+  line-height: 143%;
+
+  animation-duration: 1.2s;
 }
 .dec-line {
   width: 406px;
   height: 3px;
   background: #414A4F;
   margin-left: 30px;
+
+  animation-duration: 2s;
 }
 .slick-dots{
   position: absolute;
@@ -479,6 +483,9 @@ text-shadow: 0px 0px 1px rgb(91, 91, 91);
   display: flex;
   gap: 20px;
   position: relative;
+
+  animation-duration: 2s;
+
 }
 .servises__subtitle{
   position: absolute;
@@ -493,6 +500,8 @@ text-shadow: 0px 0px 1px rgb(91, 91, 91);
   font-weight: 700;
   line-height: 143%; 
   z-index: -1;
+
+  animation-duration: 1.2s;
   }
   .servises__subtitle span{
     color: rgba(96, 118, 141, 0.20);
@@ -505,8 +514,6 @@ text-shadow: 0px 0px 1px rgb(91, 91, 91);
   overflow: hidden;
   cursor: pointer;
 
-  animation: 3s ease-out;
-  animation-name: slidein;
 
   transition: all 1.5s ease;
 }
@@ -1187,8 +1194,11 @@ opacity: 0;
 } 
 
 .left__right-anima{
-  animation-duration: 1.2s;
   animation-name: left-right;
+}
+
+.right__lef-anima{
+  animation-name: right-left;
 }
 
 /* =================MEDIA================== */
