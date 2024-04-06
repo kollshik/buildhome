@@ -5,16 +5,9 @@ html, body {
   font-style: normal;
   scroll-behavior: smooth;
 }
-
-
-.red{
-  background-color: red;
-}
-
 :root{
   --trans: all .3s;
 }
-
 .overlay{
   display: none;
   position: absolute;
@@ -453,46 +446,7 @@ text-shadow: 0px 0px 1px rgb(91, 91, 91);
   left: 30px;
   bottom: 30px;
 }
-/* ==========animation========= */
 
-@keyframes top-down {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes top-down-nav {
-  from {
-opacity: 0;
-  }
-  to {
-    opacity: 1;}
-}
-
-@keyframes left-right {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes right-left {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-} 
 
 /* =================SERVISES================== */
 /* =================SERVISES================== */
@@ -1188,6 +1142,53 @@ flex-direction: column;
 
 .footer a:hover{
   opacity: .7;
+}
+
+/* ===================ANIMATION==================== */
+/* ===================ANIMATION==================== */
+
+@keyframes top-down {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes top-down-nav {
+  from {
+opacity: 0;
+  }
+  to {
+    opacity: 1;}
+}
+
+@keyframes left-right {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes right-left {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} 
+
+.left__right-anima{
+  animation-duration: 1.2s;
+  animation-name: left-right;
 }
 
 /* =================MEDIA================== */
