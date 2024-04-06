@@ -41,7 +41,6 @@ $(function () {
     infinite: true,
     asNavFor: '.project__slider-nav'
   });
-
   $('.project__slider-nav').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -61,6 +60,7 @@ $(function () {
     $('.project__slider').slick('slickNext')
   });
 
+
   /*Слайдер feetback */
   $('.feetback__slid-box').slick({
     arrows: false,
@@ -69,12 +69,9 @@ $(function () {
     autoplay: false,
     infinite: true,
   })
-
-  
   $('.feetback__arrow').on('click',function(e){
     e.preventDefault()
   })
-
   $('.feetback__arrow-left').on('click', function(){
     $('.feetback__slid-box').slick('slickPrev')
   });
@@ -82,33 +79,24 @@ $(function () {
     $('.feetback__slid-box').slick('slickNext')
   });
 
+  $(window).scroll(function(){
+    var windowWidth = $(this).width();
+    var windowHeight = $(this).height();
+    var headerScrollTop = $('.header').scrollTop();
+    
+
+    if(headerScrollTop>60) {
+
+      $('.servises').css("display", "block");  
+
+  } else {
+
+  $('.servises').css("display", "none");
+
+  }
+    })
 
 
 
-  /* Жалюзи */
-/*   $('.servises__blinds-item').on('click',function(){
-    if ($('.servises__blinds-item').hasClass('blinds__item-active')){
-      $('.servises__blinds-item').removeClass('blinds__item-active')
-    } else {
-      $(this).addClass('blinds__item-active')
-    }
+    
   })
- 
- */
-
-/* 
-$(document).ready(function() {
-	var windowHeight = $(window).height();
- 
-	$(document).on('scroll', function() {
-		$('.servises').each(function() {
-			var self = $(this),
-			height = self.offset().top + self.height();
-			if ($(document).scrollTop() + windowHeight >= height) {
-				self.addClass('active')
-			}
-		});
-	});
-}); */
-
-})

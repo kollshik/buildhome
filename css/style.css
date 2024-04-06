@@ -6,6 +6,11 @@ html, body {
   scroll-behavior: smooth;
 }
 
+
+.red{
+  background-color: red;
+}
+
 :root{
   --trans: all .3s;
 }
