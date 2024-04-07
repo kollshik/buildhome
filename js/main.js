@@ -104,6 +104,12 @@ $(function () {
   })
 
 
+    $('.burger').on('click', function(){
+      $('.header__top').toggleClass('open');
+
+    })
+
+
 /*   let $servhead =  $('.servises__header')
   let offsetSer = $servhead.offset().left;
   let SerHeight = $servhead.outerHeight(); 
