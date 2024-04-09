@@ -24,7 +24,7 @@ html, body {
   position: absolute;
   top: 20px;
   right: 20px;
-  height: 30px;
+  height: 20px;
   width: 30px;
   cursor: pointer;
 
@@ -792,6 +792,7 @@ z-index: 1;
   font-weight: 700;
   line-height: 143%;
   user-select: none; 
+  z-index: -1;
 }
 .consult__subtitle span{
   color: #ffffff66;
@@ -1384,5 +1385,11 @@ opacity: 0;
   }
   .project_arrow-box{
     top: calc(55% - 120px); 
+  }
+}
+
+@media (max-width:425px){
+  .header__slider-wrapper{
+    display: none;
   }
 }
