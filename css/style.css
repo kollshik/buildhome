@@ -22,10 +22,10 @@ html, body {
 }
 .burger {
   position: absolute;
-  top: 20px;
-  right: 20px;
-  height: 20px;
-  width: 30px;
+  top: 35px;
+  right: 35px;
+  height: 30px;
+  width: 40px;
   cursor: pointer;
 
   display: none;
@@ -35,7 +35,8 @@ html, body {
 .burger-line {
   width: 100%;
   height: 3px;
-  background-color: #333;
+  background-color: #414A4F;
+  border-radius: 3px;
 }
 .burger__top-line {
 }
@@ -1182,55 +1183,6 @@ flex-direction: column;
   opacity: .7;
 }
 
-/* ===================ANIMATION==================== */
-/* ===================ANIMATION==================== */
-/* 
-@keyframes top-down {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes top-down-nav {
-  from {
-opacity: 0;
-  }
-  to {
-    opacity: 1;}
-}
-
-@keyframes left-right {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes right-left {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-} 
-
-.left__right-anima{
-  animation-name: left-right;
-}
-
-.right__lef-anima{
-  animation-name: right-left;
-} */
 
 /* =================MEDIA================== */
 /* =================MEDIA================== */
@@ -1376,58 +1328,176 @@ opacity: 0;
 
 @media (max-width:750px){
 
+
+  .header{
+    height: max-content;
+    padding: 35px 0  0;
+  }
+   .header::before{
+    position: absolute;
+    content: '';
+    right: left;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/header_slid_1.jpg) right/ cover no-repeat;
+  }
   .header__slider-wrapper{
     display: none;
-
-    2123
   }
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*   .header__top{
+  .header__top{
     display: none;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    right: 0;
-    z-index: 100;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 -15px 0 0;
-    padding: 30px 10px;
-    background-color: #b3cad7;
   }
-  .open{
+  .header__inner::before{
+    display: none;
+  }
+  .header__title {
+    font-size: 76px;
+    line-height: 120%;
+    margin-bottom: 26px;
+    width: 200px;
+  }
+  .header__subtitle {
+    font-size: 15px;
+    width: 243px;
+    margin-bottom: 320px;
+  }
+  .header__btn-box{
+    margin: 0;
+  }
+  .header__button{
+    display: none;
+  }
+  .header__media{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+  }
+  .header__media-icon{
+    width: 22px;
+    height: 22px;
+    background: url(../images/header_play-icon2.svg) 0 0 / 100% no-repeat;
+  }
+  .header__media-text{
+    color: #A58B00;
+    font-size: 15px;
+  }
+  .header__social-box{
+    display: none;
+  }
+  .burger{
     display: flex;
+  }
+  .header__contact-mobily{
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 330px;
+    height: 80px;
+    background: linear-gradient(-90deg, #cdb39180, #96B5D180);  
+    border-radius: 3px;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+
+    transform: translateX(-300px);
+    transition: var(--trans);
+  }
+  .header__contact-mobily::before{
+    position: absolute;
+    content: 'Contact';
+    top: 0;
+    right: 0;
+    transform: rotate(90deg) translateX(58%) translateY(-64%);
+    font-family: belotta;
+    font-size: 17px;
+    font-weight:400;
+    line-height: 104%;
+  }
+  .dell::before{
+    opacity: 0;
+  }
+  .header__contact-mobily--open{
+    background: linear-gradient(90deg, #cdb39180, #96B5D180);
+    transform: translateX(0px);
+  }
+  .header__contact-icon{
+    display: flex;
+  }
+  .header__contact-box{
+    font-size: 17px;
+    font-weight: 400;
+    
   }
 
-  .burger {
-    display: flex;
-    z-index: 101;
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+/* ===================ANIMATION==================== */
+/* ===================ANIMATION==================== */
+
+@keyframes top-down {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
   }
-  .header__nav{
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+  to {
+    transform: translateY(0);
+    opacity: 1;
   }
-  .header__nav-link{
-    width: 100%;
+}
+@keyframes top-down-nav {
+  from {
+opacity: 0;
   }
-  .header__contact-box {
-    align-items: center;
+  to {
+    opacity: 1;}
+}
+
+@keyframes left-right {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
   }
-  .header__body{
-    padding-top: 40px;
+  to {
+    transform: translateX(0);
+    opacity: 1;
   }
- */
+}
+@keyframes right-left {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} 
+
+.left__right-anima{
+  animation-name: left-right;
+}
+
+.right__lef-anima{
+  animation-name: right-left;
 }

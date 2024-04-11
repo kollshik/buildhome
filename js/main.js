@@ -88,7 +88,6 @@ $(function () {
   let headerHeight = $header.outerHeight(); 
 
 
-
   $(window).on('scroll', function(){
     if ($(this).scrollTop() >= offset){
       $('.title').addClass('left__right-anima');
@@ -103,24 +102,27 @@ $(function () {
     }
   })
 
-
     $('.burger').on('click', function(){
       $('.header__top').toggleClass('open');
 
     })
 
+/* Выезд КОнтактов в мобильной версии */
 
-/*   let $servhead =  $('.servises__header')
-  let offsetSer = $servhead.offset().left;
-  let SerHeight = $servhead.outerHeight(); 
 
-  $(window).on('scroll', function(){
-    if ($(this).scrollTop() >= 60){
-      $('.servises__blinds-box').addClass('left__right-anima');
-    } else {
-      $('.servises__blinds-box').removedClass('left__right-anima');
+
+  $('.header__contact-mobily').on('click', function(){
+    if ($(this).hasClass('header__contact-mobily--open')){
+      $(this).removeClass('header__contact-mobily--open');
+      $('.header__contact-mobily').removeClass('dell');
+      $('.header__media').css('opacity', '1')
+    }   
+    
+    else {
+    $(this).addClass('header__contact-mobily--open');
+    $('.header__contact-mobily').addClass('dell');
+    $('.header__media').css('opacity', '0')
     }
   })
- */
 
   })
