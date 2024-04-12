@@ -110,19 +110,31 @@ $(function () {
 /* Выезд КОнтактов в мобильной версии */
 
 
+/* $(document).mouseup(function (e){ // событие клика по странице
+  if (!$("#menu").is(e.target) && // если клик сделан не по элементу
+      $("#menu").has(e.target).length === 0) { // если клик сделан не по вложенным элементам
+      $("#menu").fadeOut(); // скрываем блок
+  }
+});
+});
+ */
 
-  $('.header__contact-mobily').on('click', function(){
-    if ($(this).hasClass('header__contact-mobily--open')){
-      $(this).removeClass('header__contact-mobily--open');
-      $('.header__contact-mobily').removeClass('dell');
-      $('.header__media').css('opacity', '1')
-    }   
-    
-    else {
-    $(this).addClass('header__contact-mobily--open');
+
+$(document).on('click',function (e){
+  if ($('.header__contact-mobily').is(e.target)){
+    $('.header__contact-mobily').addClass('header__contact-mobily--open');
     $('.header__contact-mobily').addClass('dell');
     $('.header__media').css('opacity', '0')
-    }
-  })
+  }
+  else{
+    $('.header__contact-mobily').removeClass('header__contact-mobily--open');
+    $('.header__contact-mobily').removeClass('dell');
+    $('.header__media').css('opacity', '1')
+  }
+})
+
 
   })
+
+
+
