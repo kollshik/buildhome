@@ -210,6 +210,9 @@ html, body {
   background: #FFF;
   z-index: -1;
 }
+.header__contact-mobily{
+  display: none;
+}
 .header__top {
   color: #000;
   font-family: Bellota;
