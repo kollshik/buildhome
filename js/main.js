@@ -107,8 +107,6 @@ $(function () {
 
     })
 
-/* Выезд КОнтактов в мобильной версии */
-
 
 /* $(document).mouseup(function (e){ // событие клика по странице
   if (!$("#menu").is(e.target) && // если клик сделан не по элементу
@@ -119,6 +117,7 @@ $(function () {
 });
  */
 
+/* Выезд контактов в мобильной версии */
 
 $(document).on('click',function (e){
   if ($('.header__contact-mobily').is(e.target)){
@@ -133,6 +132,16 @@ $(document).on('click',function (e){
     $('.header__media').css('opacity', '1');
     $('.header__contact-box').css('font-size', '0')
   }
+})
+
+/* Выезд видео в мобильной версии */
+(document).on('click',function (e){
+  if ($('.header__media').is(e.target)){
+    $('.header__media').addClass('video__mobily-open');
+}
+  else{
+    $('.header__media').removeClass('video__mobily-open');
+}
 })
 
 

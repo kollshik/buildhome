@@ -54,6 +54,10 @@ html, body {
   transform:translateY(-50%) translateX(-50%);
   z-index: 101;
 }
+
+.video__mobily{
+  display: none;
+}
 .active{
   display: block;
 }
@@ -1333,6 +1337,7 @@ flex-direction: column;
   .header{
     height: 100vh;
     padding: 35px 0  0;
+    margin-bottom: 0;
   }
    .header::before{
     position: absolute;
@@ -1448,7 +1453,18 @@ flex-direction: column;
     font-size: 0;
     font-weight: 400;   
   }
-
+  .video__mobily{
+    display: block;
+    width: 100vw;
+    transform: translateY(-100%);
+    transition: var(--trans);
+  }
+  .video__mobily-open{
+    transform: translateY(0);
+  }
+  .video__mobily iframe{
+    width: 100%;
+  }
 
 
 
