@@ -1382,7 +1382,7 @@ opacity: 0;
 
 
   .header{
-    height: max-content;
+    height: 100vh;
     padding: 35px 0  0;
   }
    .header::before{
@@ -1399,6 +1399,13 @@ opacity: 0;
   }
   .header__top{
     display: none;
+  }
+
+
+
+
+  .header__inner{
+    height: 100%;
   }
   .header__inner::before{
     display: none;
@@ -1441,6 +1448,11 @@ opacity: 0;
   }
   .burger{
     display: flex;
+    z-index: 101;
+  }
+  .burger:hover .burger-line{
+    background-color: #A58B00;
+    
   }
   .header__contact-mobily{
     position: absolute;
@@ -1509,7 +1521,7 @@ opacity: 0;
 
 /* ===================ANIMATION==================== */
 /* ===================ANIMATION==================== */
-
+/* 
 @keyframes top-down {
   from {
     transform: translateY(-100%);
@@ -1555,4 +1567,4 @@ opacity: 0;
 
 .right__lef-anima{
   animation-name: right-left;
-}
+} */
