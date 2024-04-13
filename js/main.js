@@ -125,11 +125,13 @@ $(document).on('click',function (e){
     $('.header__contact-mobily').addClass('header__contact-mobily--open');
     $('.header__contact-mobily').addClass('dell');
     $('.header__media').css('opacity', '0')
+    $('.header__contact-box').css('font-size', '17px')
   }
   else{
     $('.header__contact-mobily').removeClass('header__contact-mobily--open');
     $('.header__contact-mobily').removeClass('dell');
-    $('.header__media').css('opacity', '1')
+    $('.header__media').css('opacity', '1');
+    $('.header__contact-box').css('font-size', '0')
   }
 })
 

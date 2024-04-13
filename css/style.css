@@ -1185,57 +1185,6 @@ flex-direction: column;
 .footer a:hover{
   opacity: .7;
 }
-
-/* ===================ANIMATION==================== */
-/* ===================ANIMATION==================== */
-
-@keyframes top-down {
-  from {
-    transform: translateY(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes top-down-nav {
-  from {
-opacity: 0;
-  }
-  to {
-    opacity: 1;}
-}
-
-@keyframes left-right {
-  from {
-    transform: translateX(-100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-}
-@keyframes right-left {
-  from {
-    transform: translateX(100%);
-    opacity: 0;
-  }
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
-} 
-
-.left__right-anima{
-  animation-name: left-right;
-}
-
-.right__lef-anima{
-  animation-name: right-left;
-}
-
 /* =================MEDIA================== */
 /* =================MEDIA================== */
 
@@ -1400,9 +1349,9 @@ opacity: 0;
   .header__top{
     display: none;
   }
-
-
-
+  .header__body{
+    height: 100%;
+  }
 
   .header__inner{
     height: 100%;
@@ -1429,7 +1378,7 @@ opacity: 0;
   }
   .header__media{
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     margin-bottom: 10px;
@@ -1457,15 +1406,13 @@ opacity: 0;
   .header__contact-mobily{
     position: absolute;
     content: '';
-    bottom: 0;
+    bottom: 20px;
     left: 0;
     width: 330px;
     height: 80px;
     background: linear-gradient(-90deg, #cdb39180, #96B5D180);  
     border-radius: 3px;
     z-index: 10;
-
-    font-size: 0px;
 
     display: flex;
     justify-content: center;
@@ -1491,7 +1438,6 @@ opacity: 0;
     opacity: 0;
   }
   .header__contact-mobily--open{
-    font-size: 17px;
     background: linear-gradient(90deg, #cdb39180, #96B5D180);
     transform: translateX(0px);
   }
@@ -1499,9 +1445,8 @@ opacity: 0;
     display: flex;
   }
   .header__contact-box{
-    font-size: 17px;
-    font-weight: 400;
-    
+    font-size: 0;
+    font-weight: 400;   
   }
 
 
