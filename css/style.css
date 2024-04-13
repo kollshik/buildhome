@@ -1183,7 +1183,7 @@ flex-direction: column;
 
 /* ===================ANIMATION==================== */
 /* ===================ANIMATION==================== */
-/* 
+
 @keyframes top-down {
   from {
     transform: translateY(-100%);
@@ -1229,7 +1229,7 @@ opacity: 0;
 
 .right__lef-anima{
   animation-name: right-left;
-} */
+}
 
 /* =================MEDIA================== */
 /* =================MEDIA================== */
