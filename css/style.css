@@ -55,9 +55,6 @@ html, body {
   z-index: 101;
 }
 
-.video__mobily{
-  display: none;
-}
 .active{
   display: block;
 }
@@ -1331,7 +1328,7 @@ flex-direction: column;
 
 /* =================750================== */
 
-@media (max-width:750px){
+/* @media (max-width:750px){
 
 
   .header{
@@ -1425,7 +1422,7 @@ flex-direction: column;
     gap: 10px;
     cursor: pointer;
 
-    transform: translateX(-300px);
+    transform: translateX(-270px);
     transition: var(--trans);
   }
   .header__contact-mobily::before{
@@ -1466,19 +1463,9 @@ flex-direction: column;
     width: 100%;
   }
 
-
-
-
-
-
-
-
-
-
 }
 
-
-
+ */
 
 /* ===================ANIMATION==================== */
 /* ===================ANIMATION==================== */

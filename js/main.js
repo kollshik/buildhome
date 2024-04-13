@@ -135,17 +135,11 @@ $(document).on('click',function (e){
 })
 
 /* Выезд видео в мобильной версии */
-(document).on('click',function (e){
-  if ($('.header__media').is(e.target)){
-    $('.header__media').addClass('video__mobily-open');
-}
-  else{
-    $('.header__media').removeClass('video__mobily-open');
-}
-})
-
-
+  $('.header__media-m').on('click', function(){
+  $('.video__box-m').css('transform', 'translateY(0)');
+  $('.video__box-m').css('visibility', 'visible');
   })
+    })
 
 
-
+  
