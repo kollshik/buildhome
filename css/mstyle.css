@@ -94,7 +94,7 @@ html, body {
       .header__contact-mobily{
         position: absolute;
         content: '';
-        bottom: 20px;
+        bottom: 0;
         left: 0;
         width: 330px;
         height: 80px;
@@ -152,7 +152,7 @@ html, body {
         cursor: pointer;
 
         position: absolute;
-        bottom: 20px;
+        bottom: 0;
         left: 50%;
         transform: translateX(-50%);
       }
