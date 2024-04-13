@@ -1183,6 +1183,55 @@ flex-direction: column;
   opacity: .7;
 }
 
+/* ===================ANIMATION==================== */
+/* ===================ANIMATION==================== */
+
+@keyframes top-down {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes top-down-nav {
+  from {
+opacity: 0;
+  }
+  to {
+    opacity: 1;}
+}
+
+@keyframes left-right {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes right-left {
+  from {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+} 
+
+.left__right-anima{
+  animation-name: left-right;
+}
+
+.right__lef-anima{
+  animation-name: right-left;
+}
 
 /* =================MEDIA================== */
 /* =================MEDIA================== */
