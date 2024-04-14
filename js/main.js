@@ -119,27 +119,48 @@ $(function () {
 
 /* Выезд контактов в мобильной версии */
 
-$(document).on('click',function (e){
+$(document).mouseup(function (e){
   if ($('.header__contact-mobily').is(e.target)){
     $('.header__contact-mobily').addClass('header__contact-mobily--open');
     $('.header__contact-mobily').addClass('dell');
-    $('.header__media').css('opacity', '0')
+    $('.header__media-m').css('opacity', '0')
     $('.header__contact-box').css('font-size', '17px')
   }
   else{
     $('.header__contact-mobily').removeClass('header__contact-mobily--open');
     $('.header__contact-mobily').removeClass('dell');
-    $('.header__media').css('opacity', '1');
+    $('.header__media-m').css('opacity', '1');
     $('.header__contact-box').css('font-size', '0')
   }
+
+
+/* Сырытие видео в мобильной версии */
+  if (!$('.video__box-m').is(e.target)){
+    $('.video__box-m').removeClass('video__box-m--open')
+   }
+
 })
 
 /* Выезд видео в мобильной версии */
-  $('.header__media-m').on('click', function(){
-  $('.video__box-m').css('transform', 'translateY(0)');
-  $('.video__box-m').css('visibility', 'visible');
-  })
-    })
-
-
   
+  $('.header__media-m').on('click', function(){
+    $('.video__box-m').addClass('video__box-m--open')
+  })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  }) 

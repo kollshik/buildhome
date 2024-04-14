@@ -53,6 +53,7 @@ html, body {
     position: relative;
     height: 100vh;
     padding: 35px 0  0;
+    z-index: 1;
     }
     .header::before{
         position: absolute;
@@ -171,9 +172,19 @@ html, body {
       }
 
       .video__box-m{
+        visibility: visible;
         transform: translateY(-100%);
-        visibility: hidden;
+        position: absolute;
+        width: 100%;
+        z-index: -2;
+
+        transition: all 1s;
       }
       .video__box-m iframe{
         width: 100%;
+      }
+      .video__box-m--open{
+        position: relative;
+        visibility: visible;
+        transform: translateY(0);
       }
