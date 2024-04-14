@@ -144,6 +144,7 @@ $(document).mouseup(function (e){
 /* Выезд видео в мобильной версии */
   
   $('.header__media-m').on('click', function(){
+    $(window).scrollTop(447);
     $('.video__box-m').addClass('video__box-m--open')
   })
 
@@ -159,7 +160,7 @@ $(document).mouseup(function (e){
     $('.overlay').toggleClass('overlay-active');
     $('.sidebar').toggleClass('sidebar-active');
   })
-  
+
   $('.overlay').on('click', function(){
     $('.burger').removeClass('burger-active');
     $('.burger-line').removeClass('burger-line-active');
