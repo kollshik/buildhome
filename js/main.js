@@ -148,9 +148,27 @@ $(document).mouseup(function (e){
   })
 
 
+  /* открытие сидибара */
 
-
-
+  $('.burger').on('click', function(){
+    $('.burger').toggleClass('burger-active');
+    $('.burger-line').toggleClass('burger-line-active');
+    $('.burger__top-line').toggleClass('burger__top-line-active');
+    $('.burger__centr-line').toggleClass('burger__centr-line-active');
+    $('.burger__bottom-line').toggleClass('burger__bottom-line-active');
+    $('.overlay').toggleClass('overlay-active');
+    $('.sidebar').toggleClass('sidebar-active');
+  })
+  
+  $('.overlay').on('click', function(){
+    $('.burger').removeClass('burger-active');
+    $('.burger-line').removeClass('burger-line-active');
+    $('.burger__top-line').removeClass('burger__top-line-active');
+    $('.burger__centr-line').removeClass('burger__centr-line-active');
+    $('.burger__bottom-line').removeClass('burger__bottom-line-active');
+    $('.overlay').removeClass('overlay-active');
+    $('.sidebar').removeClass('sidebar-active');
+  })
 
 
 
