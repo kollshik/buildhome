@@ -1,6 +1,7 @@
 html, body {
     font-style: normal;
     scroll-behavior: smooth;
+    background: #5b7081fc;
   }
   :root{
     --trans: all .3s;
@@ -97,7 +98,7 @@ html, body {
     margin-bottom: 30px;
     border-radius: 5px;
     overflow: hidden;
-
+    box-shadow: 5px 5px 0px 5px black;
     &::before{
       position: absolute;
       content: '';
