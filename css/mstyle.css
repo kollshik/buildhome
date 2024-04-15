@@ -98,7 +98,7 @@ html, body {
     margin-bottom: 30px;
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 5px 5px 0px 5px black;
+    box-shadow: 0px 3px 8px 0px black;
     &::before{
       position: absolute;
       content: '';
@@ -407,7 +407,7 @@ html, body {
   &:last-child{
     margin-bottom: 75px;
   }
-
+  
 }
 .cart__before::before  {
   position: absolute;
@@ -418,9 +418,13 @@ html, body {
   left: -5px;
   border: 1px solid #6D7880;
   z-index: -1;
-
-
 }
+.cart__before::after{
+  position: absolute;
+  content: '';
+  
+}
+
 
 
 .servises__cart-item--open{
