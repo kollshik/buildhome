@@ -141,6 +141,7 @@ $(document).mouseup(function (e){
 
 })
 
+
 /* Выезд видео в мобильной версии */
   
   $('.header__media-m').on('click', function(){
