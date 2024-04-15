@@ -186,7 +186,7 @@ $(document).mouseup(function (e){
   })
 
   $('.cart-item-1').on('click', function(){
-    $('.cart__fillter-1').toggleClass('cart__fillter-1--open')
+    $('.cart__fillter-1').toggleClass('cart__fillter-1--open');
   })
   $('.cart-item-2').on('click', function(){
     $('.cart__fillter-2').toggleClass('cart__fillter-2--open')

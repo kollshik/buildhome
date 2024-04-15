@@ -419,13 +419,6 @@ html, body {
   border: 1px solid #6D7880;
   z-index: -1;
 }
-.cart__before::after{
-  position: absolute;
-  content: '';
-  
-}
-
-
 
 .servises__cart-item--open{
   height: 164px;
@@ -442,6 +435,32 @@ html, body {
   z-index: -1;
 
   transition: all  .9s;
+
+  & img{
+    position: absolute;
+    left: 60%;
+
+    animation-duration: 1s;
+    animation-name: left-right;
+  }
+}
+@keyframes left-right {
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+
+@keyframes right-left {
+  from {
+    transform: translateX(-500px);
+  }
+  to {
+    transform: translateX(0);
+  }
 }
 
 .cart-item-1{
