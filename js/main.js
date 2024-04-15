@@ -176,10 +176,13 @@ $(document).mouseup(function (e){
 
 
 /* открытие сервисов */
+  $('.servises__cart-item').addClass('cart__before')
+
   $('.servises__cart-item').on('click', function(){
     $(this).toggleClass('servises__cart-item--open');
     $(this).find('h3').toggleClass('servises__cart-title--open');
     $(this).find('article').toggleClass('servises__cart-text--open');
+    $(this).toggleClass('cart__before')
   })
 
   $('.cart-item-1').on('click', function(){

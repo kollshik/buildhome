@@ -91,7 +91,7 @@ html, body {
   /* ===================================HEADER================================ */
   .header {
     position: relative;
-    height: 700px;
+    height: 600px;
     padding: 35px 0  0;
     z-index: 1;
     margin-bottom: 30px;
@@ -402,12 +402,26 @@ html, body {
   position: relative;
   z-index: 1;
 
+  transition: all .9s;
   &:last-child{
     margin-bottom: 75px;
   }
 
-  transition: all  .9s;
 }
+.cart__before::before  {
+  position: absolute;
+  content: '';
+  width: 100%;
+  height: 100%;
+  top: -5px;
+  left: -5px;
+  border: 1px solid #6D7880;
+  z-index: -1;
+
+
+}
+
+
 .servises__cart-item--open{
   height: 164px;
   box-shadow: 4px 4px 5px 0px #00000040;
