@@ -348,7 +348,7 @@ html, body {
       }
 
 
-/*===========УСЛУШИ================*/
+/*===========УСЛУГИ================*/
 
 .servises {
   height: 945px;
@@ -382,6 +382,10 @@ html, body {
 }
 .servises__title {
 }
+
+
+
+
 .servises__cart-box {
   display: flex;
   flex-direction: column;
@@ -398,6 +402,8 @@ html, body {
   padding: 7px 15px 0 11px;
   position: relative;
   z-index: 1;
+
+  transition: all  .9s;
 }
 
 .servises__cart-item--open{
@@ -413,8 +419,9 @@ html, body {
   bottom: 0;
   right: 0;
   z-index: -1;
-}
 
+  transition: all  .9s;
+}
 
 .cart-item-1{
 }
@@ -430,7 +437,7 @@ html, body {
 }
 
 .cart__fillter-1{
-  background: linear-gradient(90deg, #2D3740, #758FA6)
+  background: linear-gradient(90deg, #2D3740, #758FA6);
 }
 .cart__fillter-1--open{
   background: #5B758C;
@@ -456,6 +463,7 @@ html, body {
 }
 .cart__fillter-2--open{
   background: #1D2013;
+  opacity: 75%;
 }
 .cart-item-3{
 }
@@ -475,6 +483,7 @@ html, body {
 }
 .cart__fillter-3--open{
   background: #1A3D40;
+  opacity: 75%;
 }
 .cart-item-4{
 }
@@ -494,6 +503,7 @@ html, body {
 }
 .cart__fillter-4--open{
   background: linear-gradient(180deg, #1D2626, #6A8A8C);
+  opacity: 75%;
 }
 
 
@@ -511,14 +521,18 @@ html, body {
   line-height: 143%;
   margin-bottom: 13px;
   position: relative;
+
+  transition: all  .9s;
 }
 
-.servises__cart-title-open{
+.servises__cart-title--open{
   font-size: 30px;
 }
 .servises__cart-text {
   font-size: 0px;
   line-height: 130%;
+
+  transition: all  .9s;
 }
 .servises__cart-text--open{
   font-size: 15px;

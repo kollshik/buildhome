@@ -145,7 +145,8 @@ $(document).mouseup(function (e){
   
   $('.header__media-m').on('click', function(){
     $(window).scrollTop(447);
-    $('.video__box-m').addClass('video__box-m--open')
+/*     $('main').css('transform', 'translateY(450px)');
+ */    $('.video__box-m').addClass('video__box-m--open')
   })
 
 
@@ -173,13 +174,25 @@ $(document).mouseup(function (e){
 
 
 
+/* открытие сервисов */
+  $('.servises__cart-item').on('click', function(){
+    $(this).toggleClass('servises__cart-item--open');
+    $(this).find('h3').toggleClass('servises__cart-title--open');
+    $(this).find('article').toggleClass('servises__cart-text--open');
+  })
 
-
-
-
-
-
-
+  $('.cart-item-1').on('click', function(){
+    $('.cart__fillter-1').toggleClass('cart__fillter-1--open')
+  })
+  $('.cart-item-2').on('click', function(){
+    $('.cart__fillter-2').toggleClass('cart__fillter-2--open')
+  })
+  $('.cart-item-3').on('click', function(){
+    $('.cart__fillter-3').toggleClass('cart__fillter-3--open')
+  })
+  $('.cart-item-4').on('click', function(){
+    $('.cart__fillter-4').toggleClass('cart__fillter-4--open')
+  })
 
 
   }) 
