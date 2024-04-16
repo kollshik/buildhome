@@ -2,6 +2,7 @@ html, body {
     font-style: normal;
     scroll-behavior: smooth;
     background: #5b7081fc;
+    z-index: 1;
   }
   :root{
     --trans: all .3s;
@@ -84,6 +85,7 @@ html, body {
     line-height: 143%;
   }
   .main{
+
   }
   .main__servises {
   }
@@ -94,7 +96,7 @@ html, body {
     position: relative;
     height: 600px;
     padding: 35px 0  0;
-    z-index: 1;
+    z-index: 3;
     margin-bottom: 30px;
     border-radius: 5px;
     overflow: hidden;
@@ -218,22 +220,27 @@ html, body {
       }
 
       .video__box-m{
-        visibility: visible;
-        transform: translateY(-100%);
         position: absolute;
         width: 100%;
-        z-index: -2;
+        height: 315px;
+        overflow: hidden;
+        transform: translateY(calc(-100% + -30px));
 
         transition: all 1s;
-      }
-      .video__box-m iframe{
-        width: 100%;
+
+        & iframe{
+          width: 100%;
+          height: 100%;
+        }
       }
       .video__box-m--open{
         position: relative;
-        visibility: visible;
-        transform: translateY(0);
+        transform: translateY(-30px);
+
+
+        transition: all 1s;
       }
+      
       .sidebar {
         z-index: 101;
         position: absolute;
