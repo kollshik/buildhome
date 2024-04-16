@@ -143,7 +143,7 @@ html, body {
       .header__contact-mobily{
         position: absolute;
         content: '';
-        bottom: 0;
+        bottom: 15px;
         left: 0;
         width: 330px;
         height: 80px;
