@@ -441,10 +441,19 @@ html, body {
     position: absolute;
     left: 60%;
 
+    transition: all 1s;
+
     animation-duration: 1s;
     animation-name: left-right;
   }
 }
+
+
+.right-left{
+  transform: translateX(+500px)
+}
+
+
 @keyframes left-right {
   from {
     transform: translateX(-500px);
@@ -457,10 +466,10 @@ html, body {
 
 @keyframes right-left {
   from {
-    transform: translateX(-500px);
+    transform: translateX(0);
   }
   to {
-    transform: translateX(0);
+    transform: translateX(+500px);
   }
 }
 
@@ -484,6 +493,7 @@ html, body {
 .cart__fillter-1--open{
   background: #5B758C;
   opacity: 75%;
+  overflow: hidden;
 }
 
 
