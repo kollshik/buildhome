@@ -137,6 +137,9 @@ $(document).mouseup(function (e){
 /* Сырытие видео в мобильной версии */
   if (!$('.video__box-m').is(e.target)){
     $('.video__box-m').removeClass('video__box-m--open')
+    $('.header__media-icon').css('transform', 'rotate(0)')
+    $('.video__box-m').css('transform', 'translateY(calc(-100% + -30px))')
+    $('.main').css('transform', 'translateY(0)')
    }
 
 })
@@ -146,6 +149,9 @@ $(document).mouseup(function (e){
   
   $('.header__media-m').on('click', function(){
     $('.video__box-m').addClass('video__box-m--open')
+    $('.header__media-icon').css('transform', 'rotate(-90deg)')
+    $('.video__box-m').css('transform', 'translateY(calc(-30px))')
+    $('.main').css('transform', 'translateY(315px)')
   })
 
 

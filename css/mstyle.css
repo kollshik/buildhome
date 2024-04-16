@@ -85,7 +85,7 @@ html, body {
     line-height: 143%;
   }
   .main{
-
+    transition: all 1s;
   }
   .main__servises {
   }
@@ -209,6 +209,7 @@ html, body {
         width: 22px;
         height: 22px;
         background: url(../images/header_play-icon2.svg) 0 0 / 100% no-repeat;
+        transition: var(--trans);
       }
       .header__media-text{
         font-family: Buenard;
@@ -233,13 +234,7 @@ html, body {
           height: 100%;
         }
       }
-      .video__box-m--open{
-        position: relative;
-        transform: translateY(-30px);
 
-
-        transition: all 1s;
-      }
       
       .sidebar {
         z-index: 101;
