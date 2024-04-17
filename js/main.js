@@ -186,25 +186,26 @@ $(document).mouseup(function (e){
     $(this).toggleClass('servises__cart-item--open');
     $(this).find('h3').toggleClass('servises__cart-title--open');
     $(this).find('article').toggleClass('servises__cart-text--open');
-    $(this).toggleClass('cart__before')
+    $(this).toggleClass('cart__before');
+    $(this).find('.servises__cart-head').find('img').toggleClass('cart-head__icon-exit')
 
   })
 
   $('.cart-item-1').on('click', function(){
     $('.cart__fillter-1').toggleClass('cart__fillter-1--open');
-    $(this).find('img').toggleClass('right-left')
+    $('.cart__fillter-1').find('.glare').toggleClass('glary__exit')
   })
   $('.cart-item-2').on('click', function(){
     $('.cart__fillter-2').toggleClass('cart__fillter-2--open')
-    $(this).find('img').toggleClass('right-left')
+    $(this).find('.glare').toggleClass('glary__exit')
   })
   $('.cart-item-3').on('click', function(){
     $('.cart__fillter-3').toggleClass('cart__fillter-3--open')
-    $(this).find('img').toggleClass('right-left')
+    $(this).find('.glare').toggleClass('glary__exit')
   })
   $('.cart-item-4').on('click', function(){
     $('.cart__fillter-4').toggleClass('cart__fillter-4--open')
-    $(this).find('img').toggleClass('right-left')
+    $(this).find('.glare').toggleClass('glary__exit')
   })
 
 
