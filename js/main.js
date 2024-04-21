@@ -68,6 +68,14 @@ $(function () {
     slidesToShow: 1,
     autoplay: false,
     infinite: true,
+    responsive: [
+      {
+        breakpoint: 760,
+        settings: {
+          dots: false,
+        }
+      }
+    ]  
   })
   $('.feetback__arrow').on('click',function(e){
     e.preventDefault()
