@@ -869,7 +869,9 @@ background-color: #FFF8FA;
   .footer__row{
     font-family: Bellota;
     color:#9f9f9f;
-  
+    font-size: 10px;
+    text-align: center;
+
     background-color: #414A4F;
     display: flex;
     flex-direction: column;
@@ -877,7 +879,6 @@ background-color: #FFF8FA;
     align-items: center;
     padding: 10px;
   }
-  
   .footer a:hover{
     opacity: .7;
   }

@@ -1,20 +1,27 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="favicon.svg">
-    <link rel="stylesheet" href="css/fonts.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/mstyle.css">
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <title>buildhome</title>
+    <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" href="favicon.svg">
+      <link rel="stylesheet" href="css/fonts.css">
+      <link rel="stylesheet" href="css/reset.css">
+      <link rel="stylesheet" href="css/mstyle.css">
+      <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+      <title>buildhome</title>
+    </head>
+    <script>
+      if (window.innerWidth > 750) {
+          location.href = 'index.html';
+      }
+    </script>
 <body>
     <header id="header" class="header">
       <overlay class="overlay">
       </overlay>
       <div class="sidebar">
-        <a class="header__logo" href="#">
+        <a class="header__logo">
           <img src="images/logo.svg" alt="logo">
         </a>
         <ul class="header__nav">
@@ -62,9 +69,9 @@
         <div class="container">
             <div class="header__inner">
                 <div class="burger">
-                    <div class="burger__top-line burger-line"></div>
-                    <div class="burger__centr-line burger-line"></div>
-                    <div class="burger__bottom-line burger-line"></div>
+                  <div class="burger__top-line burger-line"></div>
+                  <div class="burger__centr-line burger-line"></div>
+                  <div class="burger__bottom-line burger-line"></div>
                 </div>
                 <h1 class="header__title">Build <span>Home</span></h1>
                 <article class="header__subtitle">Создадаем дома в кторые хочется 
@@ -125,7 +132,7 @@
       <iframe width="560" height="315" src="https://www.youtube.com/embed/4Ju1FXcGZWM?si=jboSk55pSnQ3cDju" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
     <main class="main">
-      <section class="main__servises servises">
+      <section id="servises" class="main__servises servises">
         <div class="container">
           <div class="servises__inner">
             <div class="servises__head head">
@@ -176,7 +183,7 @@
           </div>
         </div>
       </section>
-      <section class="main__project project">
+      <section id="project" class="main__project project">
         <div class="container">
           <div class="project__inner">
             <div class="project__head head">
@@ -293,7 +300,6 @@
         <div class="container">
           <div class="footer__inner">
             <div class="footer__body">
-              
                 <ul class="footer__nav">
                   <li class="footer__nav-item">
                     <a class="footer__nav-link" href="#header">BuildHome</a>
@@ -311,7 +317,6 @@
                     <a class="footer__nav-link" href="#feetback">Отзывы</a>
                   </li>
                 </ul>
-              
               <div class="footer__contact">
                 <h4 class="footer__contact-title">Наши контакты</h4>
                 <a href="emailto:bueldhome@gmail.com" class="footer__email">bueldhome@gmail.com</a>
